@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.searchResult{     margin: 0 auto;
+  background-color: rgb(60 60 60 / 61%);
+  padding: 20px 0;
+  border-radius: 32px;
+height: 80%;
+overflow-y: auto;
+position: relative;
+}
+.searchResult ul{margin: 0;padding: 0;}
+.searchResult ul li {
+  text-align: left;
+  list-style: none;
+  padding: 25px 20px;
+  border-bottom: 1px solid #4d4d4d;
+  font-size: 14px;
+  color: #fff;
+  align-items: flex-start;
+}
+.searchResult ul li:last-child{border:none;}
+.flex{display: flex;position: relative;}
+.justify-between{justify-content: space-between;}
+.align-center{align-items: center;}
+.searchResult ul li span .thumbnail{width:100px;margin-right: 20px;border-radius: 10px;}
+.searchResult ul li span h2{margin: 0 0 10px 0;font-size: 15px;text-transform: capitalize;}
+p{margin:0 0 15px 0;font-size: 17px;line-height: 26px;}
+.form-control{    display: inline-block;
+  padding: 5px 5px;
+  min-width: 190px;}
+  .btn-primary{
+    background-color: #272033;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 16px 26px;
+    color: #dcd6e6;
+    margin: 25px 0;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #c5b2e2;
+    letter-spacing: 0.5px;  
+  }
+  .btn-primary:hover{
+    border-color:#fff;
+    color: #fff;
+  }
+.right-section{flex-basis: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.recorded-keyword-div{flex-basis: 100%;}
+.about-project {
+  padding: 20px;
+  flex-basis: 50%;
+  background-color:rgb(13 5 38 / 60%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.wrapper{width:100%;box-sizing: border-box; height: 100vh;background-image: url(assets/bg.jpeg);background-repeat: no-repeat;color:#fff;background-position: center;
+  background-size: cover;}
+  ul{margin:0;padding:0;}
+  ul li{list-style: none;}
+  .recorded-keyword{margin-bottom: 15px;display: flex;}
+  .recorded-keyword li{text-transform: capitalize;text-align: left;}
+  .wave-img{position: absolute;
+    left: 0;
+    width: 100%;
+    right: 0;
+    opacity: 0.4;
+    top: -300px;}
+
+    .footer{margin-top:50px}
+      .footer a{color:#c4c4c4;margin:0 5px;font-size: 15px;text-decoration: none;}
+      .footer a:hover{color:#fff;}
+      .footer p{margin-bottom: 5px;}
+      .footer .red{color:red;font-size: 20px;}
+
+      .loader-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top:0;
+    }
+
+
+    @media(min-width:280px) and (max-width:380px){
+      .searchResult{height: 220px;}
+    }
+    @media(min-width:381px) and (max-width:767px){
+      .searchResult{height: 400px;}
+    }
+    @media(max-width:767px){
+      .flex {flex-direction: column-reverse;}
+      h1{font-size: 1rem;}
+      p{font-size: 12px;line-height: normal;}
+      .searchResult{border-radius: 10px;overflow-x: hidden;}
+      .searchResult ul li{padding: 8px 10px;}
+      .searchResult ul li span .thumbnail{border-radius: 2px;width: 70px;}
+      .btn-primary{margin:0 0 10px 0;font-size: 14px;padding: 11px 16px;}
+      .about-project{flex-basis: auto;background-color: rgb(18 0 75 / 40%);}
+      body{font-size: 13px;}
+      .searchResult ul li .flex{flex-direction: row;align-items: flex-start;}
+      .right-section{flex-basis: 70%;}
+    }
+
+    
