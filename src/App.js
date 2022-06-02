@@ -88,7 +88,7 @@ function App() {
       </ul>
       </div>
 
-      {newsResult.length !== 0 ? <div className='searchResult'>
+      <div className='searchResult'>
         {/* {inputText ? <h2>Your Search Keyword is: {inputText}</h2> : null} */}
         {voiceResult.length === 0 ? null  : newsResult.length === 0 ? <p>No result found</p> : isLoaded === false ? null : <p>No result found</p> }
 
@@ -106,7 +106,7 @@ function App() {
           ))}
         </ul>
         {isLoaded && <div className='loader-div'><img src={loader} alt="loader" width='55' /> </div>}
-      </div>  : null}
+      </div> 
 
       
 
