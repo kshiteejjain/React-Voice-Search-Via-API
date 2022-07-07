@@ -94,7 +94,7 @@ p{margin:0 0 15px 0;font-size: 17px;line-height: 26px;}
 .about-project {
   padding: 20px;
   flex-basis: 50%;
-  background-color:rgb(13 5 38 / 60%);
+  background-color:rgb(13 5 38 / 80%);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -132,7 +132,7 @@ p{margin:0 0 15px 0;font-size: 17px;line-height: 26px;}
 
 
     @media(min-width:280px) and (max-width:380px){
-      .searchResult{height: 220px;}
+      .searchResult{height: 330px;}
     }
     @media(min-width:381px) and (max-width:767px){
       .searchResult{height: 400px;}
@@ -140,15 +140,19 @@ p{margin:0 0 15px 0;font-size: 17px;line-height: 26px;}
     @media(max-width:767px){
       .flex {flex-direction: column-reverse;}
       h1{font-size: 1rem;}
-      p{font-size: 12px;line-height: normal;}
+      p{font-size: 13px;line-height: normal;}
       .searchResult{border-radius: 10px;overflow-x: hidden;}
       .searchResult ul li{padding: 8px 10px;}
       .searchResult ul li span .thumbnail{border-radius: 2px;width: 70px;}
       .btn-primary{margin:0 0 10px 0;font-size: 14px;padding: 11px 16px;}
-      .about-project{flex-basis: auto;background-color: rgb(18 0 75 / 40%);}
+      .about-project{flex-basis: auto;background-color: rgb(18 0 75 / 80%);}
+      .about-project p:nth-child(2){display: none;}
+      .about-project p:nth-child(4){display: none;}
       body{font-size: 13px;}
       .searchResult ul li .flex{flex-direction: row;align-items: flex-start;}
-      .right-section{flex-basis: 70%;}
+      .right-section{flex-basis: 70%;width: auto;}
+      .footer {margin-top:0;}
+      .footer a{font-size: 13px;}
     }
 
     
