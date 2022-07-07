@@ -7,14 +7,17 @@ for you based on your voice keyword.
 
 This is a Voice based news searching project built on React and we are very excited to launch it.
 
-Note: Sometimes it will throw an error because it gets exceed the limit of trial API call,
-it will get restored in 12 hours automatically and it will start working fine.
-
 
 Made with ❤ by Kshiteej Jain
 
 Connect me on [Linkedin](https://www.linkedin.com/in/kshiteejjain/) | [Email](mailto:kshiteejjain@gmail.com)
 
+
+Live Vercel Link: https://react-voice-search-via-api.vercel.app/
+
+```diff
+- Note: Free API dosent allowed to make API calls from production, Please reach out to me if you are eager to experience the working demo from localhost.
+```
 
 
 
